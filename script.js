@@ -6,9 +6,8 @@ function stringChop(str, size) {
     return []
   }
   while(i<str.length){
-    ans.push(str.slice(i,size))
-    i = i+5;
-    size = size+5;
+    ans.push(str.slice(i,i+size))
+    i = i+size;
   }
   return ans
 }
